@@ -88,8 +88,9 @@ class SubprocessBackendLite(MetaMapLite):
 
             command.append(input_file.name)
             command.append('--overwrite')
-            #command.append('--indexdir={}data/ivf/2020AA/USAbase'.format(self.metamap_home))
-            #command.append('--specialtermsfile={}data/specialterms.txt'.format(self.metamap_home))
+            command.append('--indexdir={}data/ivf/2022AA/USAbase'.format(self.metamap_home))
+            command.append('--specialtermsfile={}data/specialterms.txt'.format(self.metamap_home))
+            command.append('--modelsdir={}data/models'.format(self.metamap_home))
             # command.append(output_file.name)
 
             output_file_name, file_extension = os.path.splitext(input_file.name)
